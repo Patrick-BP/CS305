@@ -18,6 +18,6 @@ let initialAmount = prompt("Enter the initial amount: ");
 let annualIntrestRate = prompt("Enter the annuel interest Rate: ");
 let numberOfYearsCompound = prompt("Enter number of years of compound: ");
 
-let monthlyCompound = initialAmount * (1 + (annualIntrestRate)**numberOfYearsCompound)- initialAmount;
+let monthlyCompound = (initialAmount * (1 + (annualIntrestRate/12)**(numberOfYearsCompound*12)))- initialAmount;
 
 console.log(monthlyCompound);
